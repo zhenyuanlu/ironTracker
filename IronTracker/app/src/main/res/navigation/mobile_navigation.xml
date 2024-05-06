@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_profile">
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_profile"-->
+<!--        android:name="com.example.irontracker.ui.profile.ProfileFragment"-->
+<!--        android:label="@string/title_profile"-->
+<!--        tools:layout="@layout/fragment_profile" />-->
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.irontracker.ui.tasks.TasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_visualization"
+        android:name="com.example.irontracker.ui.visualization.VisualizationFragment"
+        android:label="@string/title_visualization"
+        tools:layout="@layout/fragment_visualization" />
+
+    <fragment
+        android:id="@+id/navigation_scoreboard"
+        android:name="com.example.irontracker.ui.scoreboard.ScoreboardFragment"
+        android:label="@string/title_scoreboard"
+        tools:layout="@layout/fragment_scoreboard" />
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.irontracker.ui.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.irontracker.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>

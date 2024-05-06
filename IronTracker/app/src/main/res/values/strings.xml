@@ -1,0 +1,20 @@
+<resources>
+    <string name="title_profile">Profile</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_visualization">Visualization</string>
+    <string name="title_scoreboard">Scoreboard</string>
+    <string name="app_name">IronTracker</string>
+    <string name="task_name_hint">Task Name</string>
+    <string name="task_weight_hint">Task Weight</string>
+    <string name="current_weight_hint">Current Weight</string>
+    <string name="body_weight_hint">Body Weight</string>
+    <string name="user_name">User Name</string>
+    <string name="user_score">User Score</string>
+    <string name="chart_title">Progress Chart</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="scoreboard_title">Leaderboard of Champions</string>
+</resources>
